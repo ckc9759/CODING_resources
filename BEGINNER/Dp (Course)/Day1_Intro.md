@@ -28,5 +28,27 @@ IDENTIFY :
 * If we have a choice, we can use recursion and if the cases overlap, we use Dp solution.
 * By overlapping, it suggests that 1 func call in recursion --> No DP. 2 func call --> DP soln mostly.
 * If optimal things are asked such as minimum, maximum, largest subarray etc.
-* 
+* Steps for DP soln:
+  * Recursive function
+  * Memoize
+  * Top to down DP
+
+---
+
+### Dp parent problems:
+
+* 0-1 Knapsack
+* Unbounded Knapsack
+* Fibonacci
+* LCS - Longest common subsequence
+* LIS - Longest increasing subsequence
+* kadane's algo
+* Matrix chain multiplication
+* Dp on trees
+* Dp on grid
+* Others
+
+---
+
+Thank you
 
