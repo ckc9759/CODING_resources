@@ -2,6 +2,8 @@
 
 ---
 
+LINK : https://www.youtube.com/watch?v=nqowUJzG-iM&list=PL_z_8CaSLPWekqhdCPmFohncHwz8TY2Go
+
 Day1
 
 Most of the companies which come for placement and hiring do ask DP questions : nutanix, flipkart etc.
@@ -25,5 +27,6 @@ IDENTIFY :
 * We will always be given a choice in DP, like for example including a number or not. (`CHOICE`)
 * If we have a choice, we can use recursion and if the cases overlap, we use Dp solution.
 * By overlapping, it suggests that 1 func call in recursion --> No DP. 2 func call --> DP soln mostly.
+* If optimal things are asked such as minimum, maximum, largest subarray etc.
 * 
 
