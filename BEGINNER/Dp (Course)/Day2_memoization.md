@@ -4,6 +4,8 @@
 
 LINK : https://www.youtube.com/watch?v=oBt53YbR9Kk
 
+Day 2
+
 #### Fib memoization : 
 
 * fib(n) - It returns the nth number of the fibonacci sequence.
