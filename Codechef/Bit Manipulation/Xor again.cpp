@@ -1,3 +1,6 @@
+/* Approach - We make use of cancelling propertry of xor as we cannot generate the array b as it will give TLE due to o(n2) algorithm.
+Since, (1,2) and (2,1) elements of array B represent same element their xor will be 0 and effectively won't contribute in XOR(B)*/
+
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
