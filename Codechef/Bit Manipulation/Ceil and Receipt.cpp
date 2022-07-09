@@ -1,3 +1,7 @@
+# Approach - We have 2 to the power every time, so we take it till we have a number which is closer to next power of 2.
+Like if we have 4096, then we can take 2048 or a smaller power till we get 4096.
+If we have something like 257 or 259, we take 256 then we have 1 or 3 left, therefore we go to a smaller power of 2 like 1,2.
+
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
