@@ -18,4 +18,12 @@ Atmost 2 children.
 * Dynamically created nodes.
 * Arrays.
 
+### Binary Tree Traversal
+
+* Tree traversal - Breadth first or Depth first.
+
+```py
+* Breadth first - Level order.
+* Depth first - Preorder, Postorder, Inorder.
+```
 
