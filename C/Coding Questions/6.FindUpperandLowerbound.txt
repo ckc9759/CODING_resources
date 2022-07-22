@@ -1,0 +1,93 @@
+Problem Name: Find Upper and Lower bound 
+Problem Difficulty: None
+Problem Constraints: 1 <= N <= 10^5 <br>
+1 <= Q <= 100
+
+Problem Description:
+Find position of the last and first occurrence of a given number in a sorted array. If number does not exist then print lower and upper bound as -1.
+Input Format: First line contains an integer n denoting the size of the array. <br>
+Second line contains n space separated integers denoting array elements. <br>
+Third line contains single integer Q denoting the no of queries. <br>
+Q lines follow , each containing a single integer x that is to be searched in the array.
+Sample Input: 5
+1 2 3 3 4
+3
+2
+3
+10
+Output Format: For each query , print the lowerbound and the upperbound for the number x in a new line each.
+Sample Output: 1 1
+2 3
+-1 -1
+
+
+
+=====Solution=====
+#include<iostream>
+
+int findLowerBound(int num, int a[],int n){
+    int lowerBound = -1;
+    
+    int s=0;
+    int e=n;
+    
+    while(s<=e){
+      int mid = (s+e)/2;
+      if(a[mid]==num){
+          lowerBound=mid;
+          e=mid-1;
+      }else if(a[mid]>num){
+          e=mid-1;
+      }else{
+          s=mid+1;
+      }
+    }
+    
+    return lowerBound;
+}
+
+int findUpperBound(int num, int a[],int n){
+    int upperBound =-1;
+    
+    int s=0;
+    int e=n;
+    
+    while(s<=e){
+      int mid = (s+e)/2;
+      if(a[mid]==num){
+          upperBound=mid;
+          s=mid+1;
+      }else if(a[mid]>num){
+          e=mid-1;
+      }else{
+          s=mid+1;
+      }
+    }
+    
+    return upperBound;
+}
+
+
+int main() {
+    int n;
+    std::cin >> n;
+    
+    int a[n];
+    for (int i = 0; i < n; i++) {
+        std::cin >> a[i];
+    }
+    
+    int t;
+    std::cin >> t;
+    
+    while(t--){
+        int num;
+        std::cin >> num;
+        
+        int lowerBound = findLowerBound(num,a,n);
+        int upperBound = findUpperBound(num,a,n);
+        
+        std::cout << lowerBound<<" "<<upperBound << std::endl;
+    }
+	return 0;
+}

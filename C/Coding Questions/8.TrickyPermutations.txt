@@ -1,0 +1,60 @@
+Problem Name: Tricky Permutations
+Problem Difficulty: 
+Problem Constraints: Length of the string <= 8
+Problem Description:
+Given a string containing duplicates, print all its distinct permutations such that there are no duplicate permutations and all permutations are printed in a lexicographic order.
+
+Input Format: The first and only line of the test case contains the input string.
+Sample Input: ABA
+Output Format: Print all the distinct permutations in a lexicographic order such that each permutation is in a new line. Note that there should not be any duplicate permutations.
+Sample Output: AAB
+ABA
+BAA
+
+
+
+=====Solution=====
+#include <bits/stdc++.h>
+using namespace std;
+
+void permutationNoDuplicates(string ques, string ans)
+{
+
+    if (ques.length() == 0)
+    {
+        cout << ans << "\n";
+        return;
+    }
+
+    for (int i = 0; i < ques.length(); i++)
+    {
+
+        char ch = ques[i];
+        string ros = ques.substr(0, i) + ques.substr(i + 1);
+
+        bool flag = true;
+
+        for (int j = i + 1; j < ques.length(); j++)
+        {
+            if (ques[j] == ch)
+            {
+                flag = false;
+            }
+        }
+
+        if (flag)
+            permutationNoDuplicates(ros, ans + ch);
+    }
+}
+
+int main()
+{
+    string str;
+    cin >> str;
+
+    sort(str.begin(), str.end());
+
+    permutationNoDuplicates(str, "");
+
+    return 0;
+}

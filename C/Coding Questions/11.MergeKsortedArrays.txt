@@ -1,0 +1,79 @@
+Problem Name: Merge K sorted Arrays
+Problem Difficulty: None
+Problem Constraints: Elements of array <= |10^15| <br>
+N <= 10^5 <br>
+K <= 10
+Problem Description:
+Given K sorted arrays each with N elements merge them and output the sorted array
+Input Format: First line contains 2 space separated integers K and N. <br>
+Next  lines contain K*N space separated integers 
+Sample Input: 3 4
+1 3 5 7 2 4 6 8 0 9 10 11
+Output Format: Single line consisting of space separated numbers
+Sample Output: 0 1 2 3 4 5 6 7 8 9 10 11
+
+
+
+=====Solution=====
+#include <bits/stdc++.h>
+using namespace std;
+
+#define ppi pair<int, pair<int, int>> //Pair to store <Element , < RowNumber , ColNumber > >
+
+vector<int> mergeKSortedArrays(vector<vector<int>> v)
+{
+    int k = v.size();
+    int n = v[0].size();
+
+    vector<int> res;
+
+    priority_queue<ppi, vector<ppi>, greater<ppi>> pq;
+
+    for (int i = 0; i < k; i++)
+    {
+        //Push the first elements of all the rows into the PQ with their row and column number
+        pq.push({v[i][0], {i, 0}});
+    }
+
+    while (!pq.empty())
+    {
+        //Take the smallest element out of PQ
+        //Insert it into final result and push the next element of its row into the PQ
+        ppi t = pq.top();
+        pq.pop();
+        res.push_back(t.first);
+        int rowNo = t.second.first;
+        int colNo = t.second.second;
+        if (colNo < n - 1)
+        {
+            //Check whether the current element is last element of its row or not. If so , do nothing.
+            pq.push({v[rowNo][colNo + 1], {rowNo, colNo + 1}});
+        }
+    }
+
+    return res;
+}
+
+int main()
+{
+    int k;  //No of rows
+    int n;  //No of cols
+    cin >> k >> n;
+    vector<vector<int>> v(k, vector<int>(n));
+    for (int i = 0; i < k; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            cin >> v[i][j];
+        }
+    }
+
+    vector<int> res = mergeKSortedArrays(v);
+
+    for (int x : res)
+    {
+        cout << x << " ";
+    }
+
+    return 0;
+}

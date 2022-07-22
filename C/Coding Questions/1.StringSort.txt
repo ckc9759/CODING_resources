@@ -1,0 +1,89 @@
+Problem Name: String Sort
+Problem Difficulty: 2
+Problem Constraints: N<=1000
+Problem Description:
+Nishant is a very naughty boy in Launchpad Batch. One day he was playing with strings, and randomly shuffled them all. Your task is to help Nishant Sort all the strings   ( lexicographically ) but if a string is present completely as a prefix in another string, then string with longer length should come first. Eg bat, batman are 2 strings and the string bat is present as a prefix in Batman - then sorted order should have - Batman, bat.
+Input Format: N(integer) followed by N strings.
+Sample Input: 3
+bat
+apple
+batman
+Output Format: N lines each containing one string.
+Sample Output: apple
+batman
+bat
+
+
+
+
+=====Solution=====
+package doubts;
+
+import java.util.Scanner;
+
+public class StringSort {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner scn = new Scanner(System.in);
+
+		int n = scn.nextInt();
+
+		String[] arr = new String[n];
+
+		for (int i = 0; i < arr.length; i++) {
+
+			arr[i] = scn.next();
+
+		}
+
+		bubblesort(arr);
+		
+		for(String val : arr) {
+			System.out.println(val);
+		}
+	}
+
+	public static void bubblesort(String[] arr) {
+
+		for (int i = 0; i < arr.length; i++) {
+
+			for (int j = 0; j < arr.length - i - 1; j++) {
+
+				if (compareTo(arr[j], arr[j + 1]) > 0) {
+
+					String temp = arr[j];
+					arr[j] = arr[j + 1];
+					arr[j + 1] = temp;
+				}
+
+			}
+		}
+
+	}
+
+	public static int compareTo(String s1, String s2) {
+
+		int i = 0;		
+
+		while (i < s1.length() && i < s2.length()) {
+
+			if (s1.charAt(i) > s2.charAt(i)) {
+
+				return 1;
+			} else if (s1.charAt(i) < s2.charAt(i)) {
+				return -1;
+			}
+			i++;
+
+		}
+
+		if (s1.length() > s2.length()) {
+			return -1;
+		} else {
+			return 1;
+		}
+
+	}
+}
