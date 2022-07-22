@@ -20,8 +20,29 @@ Edge edge_list[MAX_SIZE];
 
 Adjacency matrix representation
 
-Using n*n matrix to store graph values.
+Using n*n matrix to store graph values.   
+Each entry inside the matrix is the amount of energy required to go from one node to another.
 
 ---
+
+### DIJKSTRA ALGORITHM 
+
+* Shortest path to each vertex from a sorting vertex in a weighted graph.
+
+---
+
+### Floyd Warshall 
+
+*
+
+---
+
+### Minimum Spanning Tree ( MST )
+
+*
+
+---
+
+
 
 Thank you
