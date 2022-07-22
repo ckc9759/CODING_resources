@@ -23,13 +23,16 @@
 
 ### Properties of Graphs 
 
+```py
+
 * Self loop - If an edge involved only vertex. 
 * Multiedge - If it occurs more than once in a graph. Ex- Flight networks (arrival and departure) more than 1 flights running between 2 cities.
 * If graph has n vertex, then number of edges are
   * 0 to n*(n-1) if directed 
   * 0 to n*(n-1)/2 if undirected
+```
 
-
+```py
 * A graph is dense if too many edges and spare if too less number of edges.
 * A path in a graph is a way to reach from one node to another via diffn set of nodes. (WALK)
 * A simple path in a graph is when no vertices is repeated. (PATH)
@@ -39,6 +42,7 @@
 * CLOSED WALKS - A path which begins and ends at the same vertex.
 
 * Acyclic Graph - A tree with undirected edges. ( NO CYCLE )
+```
 
 ---
 
