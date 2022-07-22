@@ -1,6 +1,6 @@
-# Folder for beginners
+# Folder for beginners in C and C++
 
 RESOURCES:  
 
-Codechef:   
-Codeforces:
+Codechef: ckc_9759
+Codeforces: ckc9759
