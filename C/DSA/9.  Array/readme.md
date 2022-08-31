@@ -86,7 +86,89 @@ Nested loop --> store in counter variable and print after each sum.
 
 A subarray with equal common difference.
 
+```cpp
+void baj(){
+    int n;
+    cin>>n;
+    int a[n];
+    f0{
+        cin>>a[i];
+    }
+    int ans=2;
+    int pd=a[1]-a[0];
+    int j=2;
+    int curr=2;
+    while(j<n){
+        if(pd==a[j]-a[j-1]){
+            curr++;
+        }
+        else{
+            pd=a[j]-a[j]-1;
+            curr=2;
+        }
+        ans=max(ans,curr);
+        j++;
+    }
+    cout<<ans+1<<endl;
+}
+```
 
+---
 
+#### Record Breaking Day
 
+```cpp
+void baj(){
+    int n;
+    cin>>n;
+    int a[n+1];
+    a[n]=-1;
+    f0{
+        cin>>a[i];
+    }
+    if(n==1){
+        cout<<"1"<<endl;
+        return;
+    }
+    int ans=0;
+    int mx=INT_MIN;
+    f0{
+        if(a[i]>mx&&a[i]>a[i+1]){
+            ans++;
+        }
+        mx=max(mx,a[i]);
+    }
+    cout<<ans<<endl;
+}
+```
 
+---
+
+void baj(){
+    int n;
+    cin>>n;
+    int a[n+1];
+    a[n]=-1;
+    f0{
+        cin>>a[i];
+    }
+    if(n==1){
+        cout<<"1"<<endl;
+        return;
+    }
+    int ans=0;
+    int mx=INT_MIN;
+    f0{
+        if(a[i]>mx&&a[i]>a[i+1]){
+            ans++;
+        }
+        mx=max(mx,a[i]);
+    }
+    cout<<ans+1<<endl;
+}
+
+```
+
+---
+
+Thank you
