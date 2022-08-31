@@ -2,6 +2,7 @@
 
 ---
 
+
 ```py
 
 Arrays are used to store a list of values of the same data type.
