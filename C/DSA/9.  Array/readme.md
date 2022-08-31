@@ -144,6 +144,7 @@ void baj(){
 
 ---
 
+```cpp
 void baj(){
     int n;
     cin>>n;
