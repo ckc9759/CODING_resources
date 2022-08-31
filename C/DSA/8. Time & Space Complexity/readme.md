@@ -24,4 +24,24 @@ If we declare 3 integer variables like a,b,c then the total memory space used is
 Irrespective of the fact that we are running a loop of c b or anything.
 ```
 
+- Best case time complexity --> Denoted by Omega
+- Worst case time complexity --> Dentoed by Big O
+- Average time complexity --> Denoted by theta
+
+---
+
+- 2 Separate Loops of size m and n --> O(n+m)
+- 2 Nested loops --> O(n*m)
+
+- O(log n) complexity --> n/2 --> n/4 --> n/8 while loop (n/=2)
+
+- Time complexity --> 1+1/2+1/3 ...... 1/n <= log(n)
+- O(logn) < o(sqrt(n))
+
+---
+
+Thank you
+
+
+
 
