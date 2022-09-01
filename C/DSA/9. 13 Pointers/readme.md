@@ -36,4 +36,23 @@ Uses of pointers
 ```cpp
 int a=10;
 int *p=&a;
-cout<<
+cout<<p<<endl; --> 2000
+p++;
+cout<<p<<endl; --> 2004  (this is because int takes 4 bytes each)
+}
+
+// If there was a character, after increment it will print 2001.
+// If we make an array and use pointer on the array like *arr, it will print the first element of the array.
+```
+
+--- 
+
+```cpp
+
+If we use pointers on array,
+We can access all of it's element using a single pointer and incrementing it's value.
+
+```
+
+
+
