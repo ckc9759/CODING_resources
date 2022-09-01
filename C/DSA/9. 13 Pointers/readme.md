@@ -34,3 +34,6 @@ Uses of pointers
 ---
 
 ```cpp
+int a=10;
+int *p=&a;
+cout<<
