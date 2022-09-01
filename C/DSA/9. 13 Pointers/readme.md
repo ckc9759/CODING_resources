@@ -54,5 +54,28 @@ We can access all of it's element using a single pointer and incrementing it's v
 
 ```
 
+#### Pointer to Pointer.
+
+---
+
+```cpp
+int main(){
+   int a=10;
+   int *p;
+   p=&a;
+   cout<<*p<<endl; // 10
+   int **q=&p;
+   cout<<*q<<endl; // 2000
+   cout<<**q<<endl; // 10
+}
+
+```
+
+#### Passing pointers to function
+
+If we pass variables to functions, it's value doesn't change in the main function if we swap.
+But if we pass pointers to the function and swap them, then the actual value will also be reflected in the main function.
+
+---
 
 
