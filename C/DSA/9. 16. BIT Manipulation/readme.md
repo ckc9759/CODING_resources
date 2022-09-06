@@ -87,7 +87,42 @@ void subsets(int arr[], int n){
        cout<<endl;
    }
 }
+```
 
+---
+
+#### Find a unique number in an array or the only element with count=1
+
+```cpp
+int unique(int a[],int n){
+   int xorsum=0;
+   for(int i=0;i<n;i++){
+     xorsum=xorsum^a[i];
+   }
+   return xorsum;
+}
+```
+
+---
+
+#### Same question with 2 unique numbers
+
+```cpp
+int twoUnique(int a[], int n){
+   int xorsum=0;
+   for(int i=0;i<n;i++){
+     xorsum=xorsum^a[i];
+   }
+   int setbit=0;
+   int pos=0;
+   while(setbit!=1){
+      setbit = xorsum & 1;
+      pos++;
+      xorsum=xorsum>>1;
+   }
+   
+   
+}
 
 
 
