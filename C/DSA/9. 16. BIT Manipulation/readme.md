@@ -45,3 +45,37 @@ n & (mask)
 
 ---
 
+### Problems : 
+
+---
+
+#### Program to check if a given number is a power of 2
+
+```cpp
+bool isPowerof2(int n){
+   return (n && !(n & n-1));
+}
+```
+
+---
+
+#### Counting the number of set bits
+
+```cpp
+int numberOfOnes(int n){
+   int count=0;
+   while(n){
+      n=n & (n-1);
+      count++;
+   }
+   return count;
+}
+```
+
+---
+
+#### Generate all subsets of a set
+
+
+
+
