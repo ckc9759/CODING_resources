@@ -74,7 +74,19 @@ int numberOfOnes(int n){
 
 ---
 
-#### Generate all subsets of a set
+#### Generate all subsets of a set 
+
+```cpp
+void subsets(int arr[], int n){
+   for(int i=0;i<(1<<n);i++){
+       for(int j=0;j<n;j++){
+           if(i & (1<<j)){
+              cout<<arr[j]<<" ";
+           }
+       }
+       cout<<endl;
+   }
+}
 
 
 
