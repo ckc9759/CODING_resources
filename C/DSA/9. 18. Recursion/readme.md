@@ -78,7 +78,7 @@ void dec(int n){
 }
 ```
 
-Increasing order
+##### Increasing order
 
 ```cpp
 void inc(int n){
@@ -92,5 +92,69 @@ void inc(int n){
 
 ---
 
-#### 
+#### Find the first and last occurence of a number in an array
+
+```cpp
+int firstocc(int a[],int n, int i, int key){
+    if(i==n){
+        return -1;
+    }
+    if(a[i]==key){
+        return i;
+    }
+    return firstocc(a,n,i+1,key);
+}
+```
+
+```cpp
+int lastocc(int a[],int n, int i, int key){
+    int resta=lastocc(a,n,i+1,key);
+    if(resta!=-1){
+       return resta;
+    }
+    if(a[i]==key){
+       return i;
+    }
+    else{
+       return key;
+    }
+}
+```
+
+---
+
+#### Reversing a string using recursion
+
+```cpp
+void reverse(string s){
+    if(s.size()==0){
+        return;
+    }
+    string ros=s.substr(1);
+    reverse(ros);
+    cout<<s[0];
+}
+```
+
+---
+
+#### Replace pi with 3.14 in a string 
+
+```cpp
+void replacePi(string s){
+    if(s.size()==0){
+        return;
+    }
+    if(s[0]=='p'&&s[1]=='i'){
+        cout<<"3.14";
+        replacePi(s.substr(2));
+    }
+    else{
+        cout<<s[0];
+        replacePi(s.substr(1));
+    }
+}
+```
+
+
 
