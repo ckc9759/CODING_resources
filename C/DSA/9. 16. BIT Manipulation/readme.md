@@ -120,9 +120,26 @@ int twoUnique(int a[], int n){
       pos++;
       xorsum=xorsum>>1;
    }
-   
-   
+   int newXor=0;
+   for(int i=0;i<n;i++){
+      if(setBit(arr[i],pos-1)){
+         newXor=newXor^a[i];
+      }
+   }
 }
+cout<<newXor<<endl;
+cout<<tempxor^newXor<<endl;
+```
 
+---
+
+### Unique no. when triplets are present except one
+
+```cpp
+Use maps and see if the it.second==1
+```
+
+---
+Thank you
 
 
