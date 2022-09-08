@@ -51,3 +51,46 @@ int fib(int n){
 
 ---
 
+## Part 2
+
+#### Check if an array is sorted
+
+```cpp
+bool sorted(int a[],int n){
+    if(n==1) return true;
+    bool resta = sorted(a+1,n-1);
+    if(a[0]<a[1] && resta) return true;
+    else return false;
+}
+```
+
+---
+
+#### Print numbers till n
+
+```cpp
+void dec(int n){
+    if(n==0){
+        return;
+    }
+    cout<<n<<endl;
+    dec(n-1);
+}
+```
+
+Increasing order
+
+```cpp
+void inc(int n){
+    if(n==0){
+        return;
+    }
+    inc(n-1);
+    cout<<n<<endl;
+}
+```
+
+---
+
+#### 
+
