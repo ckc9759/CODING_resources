@@ -156,5 +156,48 @@ void replacePi(string s){
 }
 ```
 
+---
+
+#### Remove all duplicates from the string
+
+```cpp
+string removeDuplicates(string s){
+    if(s.length()==0){
+        return "";
+    }
+    char ch=s[0];
+    string ans=removeDuplicates(s.substr(1));
+    if(ch==ans[0]){
+        return ans;
+    }
+    else{
+        return ch+ans;
+    }
+}
+```
+
+---
+
+#### Move all x to the end of the string
+
+```cpp
+string movex(string s){
+    if(s.size()==0){
+        return "";
+    }
+    char ch=s[0];
+    string ans=movex(s.substr(1));
+    if(ch=='x'){
+        return ans+ch;
+    }
+    else{
+        return ch+ans;
+    }
+}
+```
+
+---
+
+
 
 
