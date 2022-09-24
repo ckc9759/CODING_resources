@@ -88,3 +88,55 @@ printf("%d",sum);
 ```
 
 Q6 : 
+
+Q7 : Write a C program in “math_ops.c” that evaluates and prints the values of the
+following arithmetic expressions. Here x and y are floating point numbers to be
+taken as input from the user. The value of pi is 3.142. Use exp, sin, cos and
+tan functions from math.h library. It is now your task to figure out how to use
+the above functions, what is their syntax. Take help of GOOGLE!
+
+expr1 = !! "#$ %&°
+'(.%×+&#$
+, -." ,&°
+expr2 = sin !
+/0$#% &.,,'1
+23 "
+
+```c
+#include <stdio.h>
+#include <math.h>
+
+int main(void){
+	float x, y;
+    scanf("%f %f", &x,&y);
+    float pi = 3.142;
+    float expr1=((exp(x)*sin(60))+(5.6)*0.00001)/(3*cos(30));
+    float expr2=sin((atan(0.33)+pi)/(2*y));
+    printf("Expression 1 value : %f\nExpression 2 value : %f\n", expr1,expr2);
+	return 0;
+}
+```
+
+---
+
+Q8 : As you know, the roots x1 and x2 of a quadratic equation ax2 + bx + c = 0 are
+calculated by:
+
+x1 = (–b + √ (b2 – 4ac))/2a,
+x2 = (–b – √ (b2 – 4ac))/2a
+
+Write a C program named “quadroots.c”, which should take a, b and c as
+inputs, and output the values of x1 and x2.
+
+```c
+#include <stdio.h>
+#include <math.h>
+int main(){
+	float a,b,c;
+	scanf("%f %f %f", &a, &b, &c);
+	float x1=(-1*b+sqrt(b*b-4*a*c))/(2*a);
+	float x2=(-1*b-sqrt(b*b-4*a*c))/(2*a);
+	printf("Roots : %f %f", x1,x2);
+    return 0;
+}
+```
