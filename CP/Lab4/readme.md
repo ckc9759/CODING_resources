@@ -8,3 +8,20 @@ leap years and assume all months have 30 days. [Hint: Use modulus (%) and
 division (/) operators. End of Hint
 
 ```c
+```
+
+Q3 : Write a C program, “swap.c”, to swap the values of two integer numbers a and 
+b entered by the user, and display the new numbers to the user. Do this with 
+and without using a third variable.
+
+```c
+scanf("%d",&a);
+scanf("%d",&b);
+a=a+b;
+b=a-b;
+a=a-b;
+printf("Swapped values");
+printf("%d\t%d", a,b);
+```
+
+Q4 : 
