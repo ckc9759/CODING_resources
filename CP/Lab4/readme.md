@@ -58,7 +58,7 @@ to covert character to integer values. End of Hint
 
 ```c
 scanf("%c%c",&a,&b);
-int sum=int(a)+int(b); # Type Casting
+int sum=(int)(a)+(int)(b); # Type Casting
 printf("%d",sum);
 ```
 
