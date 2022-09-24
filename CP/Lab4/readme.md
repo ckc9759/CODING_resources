@@ -48,3 +48,18 @@ int commission=0.02*sales;
 int gross salary=commission+bonus+1500;
 printf("%d\t%d\t%d",bonus,commission,gross salary);
 ```
+
+---
+
+Q5 : Write a C program, “ascii_test.c”, which takes two character as input and 
+returns the sum of their ASCII as output. For instance, input is A and B, the 
+output should be 131 (sum of the ASCII of A and B). [Hint: Use explicit typecast 
+to covert character to integer values. End of Hint
+
+```c
+scanf("%c%c",&a,&b);
+int sum=int(a)+int(b); # Type Casting
+printf("%d",sum);
+```
+
+Q6 : 
