@@ -8,7 +8,25 @@ leap years and assume all months have 30 days. [Hint: Use modulus (%) and
 division (/) operators. End of Hint
 
 ```c
+#include <stdio.h>
+
+int main(void) {
+	// your code goes here
+	int m, years, months, days;
+    scanf("%d", &m);
+    years = m/365;
+    m %= 365;
+    months = m/30;
+    m %= 30;
+    days = m;
+    printf("Years : %d\nMonths : %d\nDays : %d\t", years, months, days);
+	return 0;
+}
 ```
+
+---
+
+Q2 : 
 
 ---
 
@@ -17,13 +35,20 @@ b entered by the user, and display the new numbers to the user. Do this with
 and without using a third variable.
 
 ```c
-scanf("%d",&a);
-scanf("%d",&b);
-a=a+b;
-b=a-b;
-a=a-b;
-printf("Swapped values");
-printf("%d\t%d", a,b);
+#include <stdio.h>
+
+int main(void) {
+	// your code goes here
+	int a,b;
+	scanf("%d",&a);
+    scanf("%d",&b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("Swapped values\n");
+    printf("%d\t%d", a,b);
+	return 0;
+}
 ```
 
 ---
