@@ -10,6 +10,8 @@ division (/) operators. End of Hint
 ```c
 ```
 
+---
+
 Q3 : Write a C program, “swap.c”, to swap the values of two integer numbers a and 
 b entered by the user, and display the new numbers to the user. Do this with 
 and without using a third variable.
@@ -24,4 +26,25 @@ printf("Swapped values");
 printf("%d\t%d", a,b);
 ```
 
-Q4 : 
+---
+
+Q4 : A computer manufacturing company has the following monthly compensation 
+policy to their salespersons: 
+Minimum base salary : 1500.00 
+Bonus for every computer sold : 200.00 
+Commission on the total monthly sales : 2 per cent 
+Since the prices of computers are changing, the sale price of each computer is 
+fixed at the beginning of every month. Write a C program, “computer_sales.c”,
+to compute a sales-person's bonus, commission and gross salary. Your program 
+should take the number of computers sold (in a month) and the sale price of a 
+computer as user input.
+
+```c
+scanf("%d", &nComp);
+scanf("%d",&salesPrice);
+int sales=(salesPrice)*nComp;
+int bonus=200*nComp;
+int commission=0.02*sales;
+int gross salary=commission+bonus+1500;
+printf("%d\t%d\t%d",bonus,commission,gross salary);
+```
