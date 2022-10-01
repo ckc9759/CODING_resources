@@ -80,3 +80,24 @@ int main(){
 }
 ```
 
+Q2 : Ternary operators
+
+```c
+#include <stdio.h>
+
+int main(){
+	int n;
+	printf("Enter a number\n");
+	scanf("%d",&n);
+	int m=n;
+	int rev=0;
+	while(m>0){
+		rev=rev*10+(m%10);
+		m/=10;
+	}
+	(rev==n) ? printf("YES\n") : printf("NO\n");
+	return 0;
+}
+```
+
+Q3 : 
