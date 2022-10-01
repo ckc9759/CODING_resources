@@ -206,5 +206,7 @@ int main(){
 
 ---
 
+Q8 : initialized instead of comparison
+
 
 
