@@ -80,6 +80,8 @@ int main(){
 }
 ```
 
+---
+
 Q2 : Ternary operators
 
 ```c
@@ -100,4 +102,67 @@ int main(){
 }
 ```
 
-Q3 : 
+---
+
+
+Q3 : Max Sum
+
+```c
+#include <stdio.h>
+
+int main(){
+	int a,b,c,d;
+	printf("Enter 4 numbers\n");
+	scanf("%d %d %d %d", &a,&b,&c,&d);
+	int m1=a;
+	int m2=b;
+	if(m2>m1){
+		m1=b;
+		m2=a;
+	}
+	if(m1<c){
+		m2=m1;
+		m1=c;
+	}
+	if(m1<d){
+		m2=m1;
+		m1=d;
+	}
+	if(m2<c){
+		m2=c;
+	}
+	if(m2<d){
+		m2=d;
+	}
+	int sum=m1+m2;
+	printf("Ans = %d\n",sum);
+	return 0;
+}
+```
+
+---
+
+Q4 : Natural numbers 
+
+```c
+#include <stdio.h>
+
+int main(){
+	int N;
+	printf("Enter a number\n");
+	scanf("%d",&N);
+    int sum = 0; /* let sum be zero, to begin with */
+    int num = 1; /* start adding up from 1 */
+    while (num <= N) /* as long as num has not exceeded N...*/
+    {
+     printf("%d ", num); /* print out the number */
+     num++; /* increment it to the next value*/
+    }
+      printf("Bye\n");
+     return 0;
+}
+```
+
+---
+
+
