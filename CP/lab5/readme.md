@@ -165,4 +165,46 @@ int main(){
 
 ---
 
+Q6 : Sum2
+
+```c
+#include <stdio.h>
+
+int main(){
+	int n;
+	printf("Enter a number\n");
+	scanf("%d",&n);
+	int sum=0;
+	if(n>0){
+		sum+=(2*n)*(2*n+1)/2;
+		sum-=n*(n+1)/2;
+	}
+	else{
+		sum-=(2*n)*(2*n+1)/2;
+		sum+=(3*n)*(3*n+1)/2;
+		sum*=(-1);
+	}
+	printf("Sum = %d\n",sum);
+	return 0;
+}
+```
+
+---
+
+Q7 : Infinite
+
+```c
+#include <stdio.h>
+
+int main(){
+	for(;1;){
+		printf("True Forever");
+	}
+	return 0;
+}
+```
+
+---
+
+
 
