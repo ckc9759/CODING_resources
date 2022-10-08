@@ -63,4 +63,65 @@ int main(){
 
 ---
 
+Q5 : Sum
+
+```c
+#include <stdio.h>
+#include <stdbool.h>
+#include <math.h>
+
+int fact(int n){
+	int k=1;
+	for(int i=2;i<=n;i++){
+		k*=i;
+	}
+	return k;
+}
+
+void checksum(int n){
+	int sum=0;
+	for(int i=1;i<=n;i++){
+		sum+=fact(i)/i;
+	}
+	printf("%d\n", sum);
+}
+
+int main(){
+	printf("Enter a number\n");
+	int n;
+	scanf("%d",&n);
+	checksum(n);
+	return 0;
+}
+```
+
+
+Q6 : isPrime
+
+```c
+#include <stdio.h>
+#include <stdbool.h>
+#include <math.h>
+
+void isPrime(int n){
+	int k=0;
+	for(int i=2;i<n;i++){
+		if(n%i==0){
+			k=1;
+			break;
+		}
+	}if(k==1) printf("Not prime\n");
+	else printf("Is Prime\n");
+}
+
+int main(){
+	printf("Enter a number\n");
+	int n;
+	scanf("%d",&n);
+	isPrime(n);
+	return 0;
+}
+```
+
+
 
