@@ -55,3 +55,48 @@ int main(){
    root->left->right=new Node(5);
    return 0;
 }
+
+---
+
+## Tree Traversal
+
+#### Preorder Traversal
+
+```cpp
+// Basically start with root traverse the left subtree and then the right subtree. Example -> 1,2,3,4,5,6,7
+
+void preorder(struct Node* root){
+   if(root==NULL) return;
+   cout<<root->data<<" ";
+   preorder(root-left);
+   preorder(root->right);
+}
+```
+
+#### Inorder Traversal 
+
+```cpp
+// Basically start with left subtree go to root and then right subtree is traversed. Example -> 3,2,4,1,6,5,7 for a binary tree with 7 natural numbers of height 3.
+
+void inorder(struct Node* root){
+    if(root==NULL) return;
+    inorder(root->left);
+    cout<<root->data<<" ";
+    inorder(root->right);
+}
+```
+
+#### Postorder Traversal
+
+```cpp
+// Basically start with left then right subtree then go to the root. Example -> 3,4,2,1,6,7,5
+
+void postorder(struct Node* root){
+   if(root==NULL) return;
+   postorder(root->left);
+   postorder(root->right);
+   cout<<root->data<<" ";
+}
+```
+
+---
