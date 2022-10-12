@@ -93,5 +93,25 @@ int NodeSum(Node* root){
 
 ```cpp
 int Height(Node* root){
-    int l
+    if(root==NULL) return 0;
+    int lheight=Height(root->left);
+    int Rheight=Height(root->right);
+    return max(lheight,Rheight)+1;
 }
+```
+
+#### Diameter of a Binary Tree --> Number of nodes in the longest path between any two leaves.
+
+```cpp
+int dia(Node* root){
+    if(root==NULL) return 0;
+    int lh1=Height(root->left);
+    int rh1=Height(root->right);
+    int mm1=lh1+rh1+1;
+    int lh=dia(root->left);
+    int rh=dia(root->right);
+    int curd=max(lh,rh);
+    return max(mm1,curd);
+}
+```
+
