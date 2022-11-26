@@ -17,11 +17,23 @@ void fun1(int* a,int n){
 void fun2(int **ptr,int m,int n){
 	int l;
 	for(int i=0;i<m;i++){
-		for(int j=i+1;j<n;j++){
-			if(**(ptr+i)>**(ptr+j)){
-				l=**(ptr+i);
-				**(ptr+i)=**(ptr+j);
-				**(ptr+j)=l;
+		for(int j=0;j<n;j++){
+			for(int k=j+1;k<n;k++){
+			if(*(*(ptr+i)+j)>*(*(ptr+i)+k)){
+				l=*(*(ptr+i)+j);
+				*(*(ptr+i)+j)=*(*(ptr+i)+k);
+				*(*(ptr+i)+k)=l;
+			}
+		}
+	}
+	}
+	int z;
+	for(int i=0;i<m;i++){
+		for(int j=0;j<n;j++){
+			if(*(*(ptr+i)+0)>(*(*(ptr+j)+0))){
+				z=*(ptr+i);
+				*(ptr+i)=*(ptr+j);
+				*(ptr+j)=z;
 			}
 		}
 	}
