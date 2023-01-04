@@ -36,5 +36,21 @@ for(auto it:v){
 ```
 ```cpp
 v.pop_back(); // removes the last 
+vector<int>v2(3,50); // we can initialize and specify the size of a vector using the given syntax
+swap(v,v2); // swaps two vectors.
+sort(v.begin(),v.end());
+```
+
 ---
+
+### Pairs
+
+
+```cpp
+pair<int,int>p;
+p.first=3;
+p.second=5;
+```
+
+
 
