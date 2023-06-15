@@ -25,3 +25,10 @@ count() and index() functions, array slicing
 
 ```py
 key value pair
+get() --> to get the value of a key in dictionary
+keys() --> keys in dicitionary
+values() --> values in dictionary
+items() --> key, value pair
+update() --> 
+
+
