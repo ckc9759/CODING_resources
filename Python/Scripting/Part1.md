@@ -108,8 +108,73 @@ Type "help", "copyright", "credits" or "license" for more information.
 ### Strip, split
 
 ```py
+┌──(ckc9759㉿Kali)-[~/Desktop/ctf/python]
+└─$ python3
+Python 3.10.5 (main, Jun  8 2022, 09:26:22) [GCC 11.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> a="            ckc          "
+>>> a.strip()
+'ckc'
+>>> b='hh jtmcvkjnb hh'
+>>> b.lstrip('hh')
+' jtmcvkjnb hh'
+>>> x='python is easy'
+>>> x.split()
+['python', 'is', 'easy']
+>>> x.split('is')
+['python ', ' easy']
+>>> x.split('easy')
+['python is ', '']
+>>> 
+```
 
+### count, index and find
 
+```py
+┌──(ckc9759㉿Kali)-[~/Desktop/ctf/python]
+└─$ python3
+Python 3.10.5 (main, Jun  8 2022, 09:26:22) [GCC 11.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> a="hello what a pleasant day it is. a bee is flying there, what a sight !"
+>>> a.count()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: count() takes at least 1 argument (0 given)
+>>> a.count('a')
+8
+>>> a.count(a)
+1
+>>> a.count('what')
+2
+>>> a.count('ll')
+1
+>>> a.index('a')
+8
+>>> a.index('h')
+0
+>>> a.index('h',1)
+7
+>>> a.find('bee')
+35
+>>> a.find('is')
+29
+>>> a.find('is',30)
+39
+>>> a.find('is',36)
+39
+>>> a.find('is',40)
+-1
+>>>
+```
+
+#### Data Structures
+
+```py
+list --> []
+tuple --> ()
+dict --> {} key value pair
+set --> {}
+```
 
 
 
