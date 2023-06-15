@@ -29,6 +29,29 @@ get() --> to get the value of a key in dictionary
 keys() --> keys in dicitionary
 values() --> values in dictionary
 items() --> key, value pair
-update() --> 
+update() --> Similiar to extends() function of list
+pop() --> removes value corresponding to key
+popitem() --> pops the last element
+```
+
+ #### Set 
+
+ ```py
+Creates a data in ascending order with non repeating values
+union() - combines two sets eliminating repeated values
+intersection() - returns a new set with intersecting elements from two sets
+```
+
+#### Opeartors
+
+```py
+Arithmetic - + - * / % // **
+Assignment - Shorthand operators
+Comparison - > < == != >= <=
+Identify - 
+Membership
+Logical
+Bitwise
+```
 
 
