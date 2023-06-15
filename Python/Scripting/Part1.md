@@ -70,4 +70,46 @@ isdecimal()
 
 ---
 
+#### join, centre, zfill
+
+```py
+┌──(ckc9759㉿Kali)-[~/Desktop/ctf/python]
+└─$ python3
+Python 3.10.5 (main, Jun  8 2022, 09:26:22) [GCC 11.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> x="chaitanya"
+>>> y="".join(x)
+>>> y
+'chaitanya'
+>>> y=" ".join(x)
+>>> y
+'c h a i t a n y a'
+>>> 
+```
+
+```py
+┌──(ckc9759㉿Kali)-[~/Desktop/ctf/python]
+└─$ python3
+Python 3.10.5 (main, Jun  8 2022, 09:26:22) [GCC 11.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> x="chaitanya"
+>>> x
+'chaitanya'
+>>> y=x.center(30)
+>>> y
+'          chaitanya           '
+>>> z=x.zfill
+>>> z=x.zfill(20)
+>>> z
+'00000000000chaitanya'
+>>>
+```
+
+### Strip, split
+
+```py
+
+
+
+
 
