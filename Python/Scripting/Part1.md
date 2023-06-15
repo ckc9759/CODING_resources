@@ -37,5 +37,37 @@ s[0:5] --> substring from 0th index to 4th index
 s[0:] --> 0 to last
 s[:5] --> till 5th, since no start is provided, 0 to 4th index
 
-Strings are immutable though we can re-assign. 
+Strings are immutable though we can re-assign.
 ```
+
+#### Python functions for strings
+
+```py
+lower() --> lowercase
+upper() --> uppercase
+dir(x) --> operations that can be performed on x
+swapcase() --> swap the cases, upper to lower, lower to upper.
+title() --> each words first letter is capital.
+capitalize() --> first letter capital.
+```
+
+#### Python Boolean
+
+```py
+startswith('p') --> checks if string starts with p or not, returns boolean data
+endswith('p') --> checks for ending character, returns boolean
+islower() --> checks if strings is lowercase.
+isupper() --> Similiar
+istitle()
+isspace()
+isalpha()
+isnumeric()
+isprintable()
+isalnum()
+isascii()
+isdecimal()
+```
+
+---
+
+
