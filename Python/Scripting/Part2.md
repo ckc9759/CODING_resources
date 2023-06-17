@@ -99,6 +99,35 @@ platform.python_version()        platform.python_version_tuple()
 uname_result(system='Linux', node='Kali', release='5.18.0-kali5-amd64', version='#1 SMP PREEMPT_DYNAMIC Debian 5.18.5-1kali6 (2022-07-07)', machine='x86_64')
 ```
 
+```py
+GETPASS MODULE
+
+import getpass
+passw=getpass.getpass(prompt="Enter your password : ")
+print(f"entered password is : {passw}")
+env | grep 'ckc'
+```
+
+```py
+SYS MODULE
+
+┌──(ckc9759㉿Kali)-[~/Desktop/ctf/python]
+└─$ python3 
+Python 3.10.5 (main, Jun  8 2022, 09:26:22) [GCC 11.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import sys
+>>> sys.version
+'3.10.5 (main, Jun  8 2022, 09:26:22) [GCC 11.3.0]'
+>>> sys.version_info
+sys.version_info(major=3, minor=10, micro=5, releaselevel='final', serial=0)
+>>> sys.path
+['', '/usr/lib/python310.zip', '/usr/lib/python3.10', '/usr/lib/python3.10/lib-dynload', '/home/ckc9759/.local/lib/python3.10/site-packages', '/usr/local/lib/python3.10/dist-packages', '/usr/lib/python3/dist-packages', '/usr/lib/python3.10/dist-packages']
+>>> sys.exit()
+>>> sys.argv
+```
+
+
+
 
 
 
