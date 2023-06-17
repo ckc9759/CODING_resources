@@ -126,6 +126,64 @@ sys.version_info(major=3, minor=10, micro=5, releaselevel='final', serial=0)
 >>> sys.argv
 ```
 
+```py
+OS MODULE
+
+┌──(ckc9759㉿Kali)-[~/Desktop/ctf/python]
+└─$ python3   
+Python 3.10.5 (main, Jun  8 2022, 09:26:22) [GCC 11.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import os
+>>> os.sep
+'/'
+>>> os.getcwd()
+'/home/ckc9759/Desktop/ctf/python'
+>>> os.chdir("/home/ckc9759/Desktop/ctf")
+>>> os.getcwd()
+'/home/ckc9759/Desktop/ctf'
+>>> os.listdir()
+['.secret', 'python', 'sol.py', '.gdb_history', 'sol2.py']
+>>> os.mkdir("New_directory")
+>>> os.listdir()
+['.secret', 'python', 'New_directory', 'sol.py', '.gdb_history', 'sol2.py']
+>>> os.remove('New_directory')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IsADirectoryError: [Errno 21] Is a directory: 'New_directory'
+>>> os.removedirs('New_directory')
+>>> os.listdir()
+['.secret', 'python', 'sol.py', '.gdb_history', 'sol2.py']
+>>> os.rename('python','python3')
+>>> os.listdir()
+['.secret', 'python3', 'sol.py', '.gdb_history', 'sol2.py']
+>>> os.environ()
+
+>>> os.getuid()
+1000
+>>> os.getpid()
+4004
+>>> os.getgid()
+1000
+>>> os.getppid()
+1657
+```
+
+```py
+OS PATH
+>>> path1='/home'
+>>> path2='ckc'
+>>> os.path.system(path1,path2)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: module 'posixpath' has no attribute 'system'
+>>> os.path.join(path1,path2)
+'/home/ckc'
+```
+
+
+
+
+
 
 
 
