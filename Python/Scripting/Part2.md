@@ -48,7 +48,7 @@ intersection() - returns a new set with intersecting elements from two sets
 Arithmetic - + - * / % // **
 Assignment - Shorthand operators
 Comparison - > < == != >= <=
-Identify - 
+Identify - Used to find the type of class / object. 
 Membership
 Logical
 Bitwise
