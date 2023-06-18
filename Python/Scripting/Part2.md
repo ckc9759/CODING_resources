@@ -180,6 +180,31 @@ AttributeError: module 'posixpath' has no attribute 'system'
 '/home/ckc'
 ```
 
+```py
+import os
+
+path="/home/ckc9759/Desktop/ctf/"
+print(list(os.walk(path)))
+
+for each in list(os.walk(path)):
+   print(each)
+```
+
+```py
+import getpass
+passw=getpass.getpass(prompt="Enter your password : ")
+print(f"entered password is : {passw}")
+```
+
+```py
+import os
+req_file=input("Enter the file to search : ")
+
+for r,d,f in os.walk("/"):
+   for each_file in f:
+      if each_file==req_file:
+         print(os.path.join(r,each_file))
+```
 
 
 
