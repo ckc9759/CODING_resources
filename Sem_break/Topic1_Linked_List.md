@@ -1,4 +1,4 @@
-![image](https://github.com/ckc9759/CODING_resources/assets/95117634/a374c7d1-ea70-459c-a484-90c3dc28163e)### Linked List
+### Linked List
 
 ---
 
