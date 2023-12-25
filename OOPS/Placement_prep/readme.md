@@ -42,4 +42,6 @@ Binding or wrapping code and data together into a single unit are known as encap
 
 Coupling is two classes being aware of each other, the knowledge and dependency of another class. Strong coupling -> details of another class. Interfaces provide weak coupling whereas private public and protected modifiers provide stronger coupling.
 
+---
 
+#### Cohesion
