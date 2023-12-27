@@ -2,6 +2,8 @@
 
 ---
 
+[Apni kaksha](https://docs.google.com/document/d/1uv9EdLaG9TK7iNcMneLeEaChzvmXU9Xu_Uv5iZwswFk/edit)
+
 OOP lang - Simula, Smalltalk, Java, C#, PHP, Python, C++.
 OOP is designing a program revolving around classes and objects
 
