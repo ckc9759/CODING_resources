@@ -22,7 +22,7 @@ When an object acquires all the properties and behaviours of a parent object, it
 
 #### Polymorphism
 
-If one task is performed in different ways, it is known as polymorphism. Java uses method overloading and method overriding to achieve polymorphism.
+If one task is performed in different ways, it is known as polymorphism. Java uses method overloading (compile time polymorphism) and method overriding (run time polymorphism) to achieve polymorphism. 
 
 ---
 
