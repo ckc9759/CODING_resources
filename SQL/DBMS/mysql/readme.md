@@ -102,6 +102,7 @@ CLAUSES :
 5. HAVING -> used for applying conditions on GROUP
 (SELECT count(name), city FROM student GROUP BY city HAVING max(marks)>90;)
 
+GENERAL ORDER -> SELECT->FROM->WHERE->GROUP BY->HAVING->ORDER BY
 ```
 
 ---
@@ -110,5 +111,10 @@ CLAUSES :
 
 ```py
 COUNT(), MAX(), MIN(), SUM(), AVG()
+```
+
+```py
+UPDATE table_name SET grade="C" WHERE grade="A";
+DELETE FROM table_name WHERE condition;
 ```
 
