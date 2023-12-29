@@ -98,6 +98,10 @@ CLAUSES :
 1. WHERE -> CONDITION (WHERE marks>80;, WHERE CITY="mumbai";, WHERE marks>80 or CITY="mum";
 2. LIMIT -> Limtis the rows returned. (SELECT * FROM student LIMIT 3;
 3. ORDER BY ASC, ORDER BY DESC - Sort data.
+4. GROUP BY ASC -> used to group similiar entities
+5. HAVING -> used for applying conditions on GROUP
+(SELECT count(name), city FROM student GROUP BY city HAVING max(marks)>90;)
+
 ```
 
 ---
