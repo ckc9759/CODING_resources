@@ -88,9 +88,23 @@ KEYS :
 1. PRIMARY KEY -> Single unique column, can't be null.
 2. FOREIGN KEY -> Multiple, refer to P.Key, can be null.
 
+
 CONSTRAINTS - NOT NULL, UNIQUE, PK, FK, DEFAULT
+BETWEEN - To specify range
+IN, NOT IN - To check if it exists or not in a list, just like python.
 
 CLAUSES :
 
-1. WHERE -> CONDITION (WHERE marks>80;, WHERE CITY="mumbai";,
+1. WHERE -> CONDITION (WHERE marks>80;, WHERE CITY="mumbai";, WHERE marks>80 or CITY="mum";
+2. LIMIT -> Limtis the rows returned. (SELECT * FROM student LIMIT 3;
+3. ORDER BY ASC, ORDER BY DESC - Sort data.
+```
+
+---
+
+#### AGGREGATE FUNCTIONS
+
+```py
+COUNT(), MAX(), MIN(), SUM(), AVG()
+```
 
