@@ -9,3 +9,7 @@
 5. [Striver](https://takeuforward.org/dsa/strivers-sde-sheet-top-coding-interview-problems)
 6. 
 
+QQ
+
+1. When is & reference to be used and when to be not used ?
+2. 
