@@ -10,8 +10,16 @@
 6. 
 
 QQ
-
+```md
 1. When is & reference to be used and when to be not used ?
-2. Why do we store n+1 sometimes in matrix and adjancy list, 1 based numbers ?
-3. When do we use ordered and unordered map or set ?
-4. 
+-> Problems
+Slower for large vectors
+Uses extra memory
+Changes inside the function don't affect the original
+
+2. Why do we store n+1 sometimes in matrix and adjancy list, 1 based numbers ? -> 0 based indexing and 1 based.
+
+3. When do we use ordered and unordered map or set ? -> map is Internally usually implemented using a balanced Binary Search Tree (Red-Black Tree). so will sort the data and not preserver the order.
+
+4.  
+```
